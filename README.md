@@ -24,6 +24,8 @@ This is a telegram bot helps you to store your files and get the share able perm
 
 - `IS_PRIVATE:` Add True if you want to use private ,make sure u add AUTH_USERS if you are using IS_PRIVATE
 
+- `PROTECT_CONTENT:` Add True if you Want to Restrict files from forwarding
+
 - `AUTH_USERS:` USERID's or ChannelID separated by space (Only mandatory if IS_PRIVATE is True)
 
 ## Deploy to heroku 🗳
