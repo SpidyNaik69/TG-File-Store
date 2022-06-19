@@ -115,8 +115,7 @@ async def start(c, m, cb=False):
     else: # sending start message
         await send_msg.edit(
             text=text,
-            reply_markup=InlineKeyboardMarkup(buttons),
-            protect_content=PROTECT_CONTENT
+            reply_markup=InlineKeyboardMarkup(buttons)
         )
 
 
