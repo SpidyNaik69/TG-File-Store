@@ -52,6 +52,7 @@ async def start(c, m, cb=False):
         return await m.message.edit(
                    text=text,
                    reply_markup=InlineKeyboardMarkup(buttons)
+                   protect_content=PROTECT_CONTENT
                )
 
     if len(m.command) > 1: # sending the stored file
@@ -116,6 +117,7 @@ async def start(c, m, cb=False):
         await send_msg.edit(
             text=text,
             reply_markup=InlineKeyboardMarkup(buttons)
+            protect_content=PROTECT_CONTENT
         )
 
 
@@ -157,7 +159,7 @@ async def batch(c, m):
         else:
             try:
                 reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('Done ✅', callback_data='done')]])
-                media = await c.ask(chat_id=m.from_user.id, text='Ok 😉. Now send me some more files Or press done to get shareable link. If you want to cancel the process send /cancel', reply_markup=reply_markup)
+                media = await c.ask(chat_id=m.from_user.id, text='Ok 😉. Now send me some more files Or press done to get shareable link. If you want to cancel the process send /cancel', reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
                 if media.text == "/cancel":
                     return await m.reply_text('Cancelled Successfully ✌')
                 files.append(media)
