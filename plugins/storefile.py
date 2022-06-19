@@ -57,6 +57,7 @@ async def storefile(c, m):
     await send_message.edit(
         text,
         reply_markup=InlineKeyboardMarkup(buttons)
+        protect_content=PROTECT_CONTENT
     )
 
 #################################### FOR CHANNEL################################################
