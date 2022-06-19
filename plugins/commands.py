@@ -51,7 +51,7 @@ async def start(c, m, cb=False):
     if cb:
         return await m.message.edit(
                    text=text,
-                   reply_markup=InlineKeyboardMarkup(buttons)
+                   reply_markup=InlineKeyboardMarkup(buttons),
                    protect_content=PROTECT_CONTENT
                )
 
@@ -116,7 +116,7 @@ async def start(c, m, cb=False):
     else: # sending start message
         await send_msg.edit(
             text=text,
-            reply_markup=InlineKeyboardMarkup(buttons)
+            reply_markup=InlineKeyboardMarkup(buttons),
             protect_content=PROTECT_CONTENT
         )
 
