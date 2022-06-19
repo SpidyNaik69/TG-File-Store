@@ -51,8 +51,7 @@ async def start(c, m, cb=False):
     if cb:
         return await m.message.edit(
                    text=text,
-                   reply_markup=InlineKeyboardMarkup(buttons),
-                   protect_content=PROTECT_CONTENT
+                   reply_markup=InlineKeyboardMarkup(buttons)
                )
 
     if len(m.command) > 1: # sending the stored file
