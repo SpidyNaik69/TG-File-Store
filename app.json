@@ -1,16 +1,16 @@
 {
-  "name": "File Store",
-  "description": "Telegram bot to store your telegram files",
+  "name": "YourDemand File Store",
+  "description": "Official File Store Bot of YourDemandZone",
   "keywords": [
     "telegram",
     "best",
     "Store",
     "Files"
   ],
-  "logo": "https://telegra.ph/file/bdd3352951be090a56590.jpg",
-  "success_url": "https://telegram.dog/filestore_Nsbot",
-  "website": "https://github.com/Ns-Bots/TG-File-Store",
-  "repository": "https://github.com/Ns-Bots/TG-File-Store",
+  "logo": "https://telegra.ph/file/37b0388138874cd7aab96.jpg",
+  "success_url": "https://t.me/yourdemandzone",
+  "website": "https://t.me/yourdemandzone",
+  "repository": "https://t.me/yourdemandzone",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
