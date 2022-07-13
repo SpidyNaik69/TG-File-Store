@@ -23,7 +23,7 @@ async def start(c, m, cb=False):
         send_msg = await m.reply_text("**Processing...**", quote=True)
 
     owner = await c.get_users(int(OWNER_ID))
-    owner_username = owner.username if owner.username else 'Ns_bot_updates'
+    owner_username = owner.username if owner.username else 'Mr.Spidy'
 
     # start text
     text = f"""Hey! {m.from_user.mention(style='md')}
